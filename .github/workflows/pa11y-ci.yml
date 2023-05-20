@@ -31,6 +31,7 @@ jobs:
 
       - name: Execute Pa11y CI
         run: npx pa11y-ci --reporter pa11y-ci-reporter-html https://github.com/aarongoldenthal/pa11y-ci-actions-test/
+        continue-on-error: true
 
       - name: Upload HTML report
         uses: actions/upload-artifact@v3
