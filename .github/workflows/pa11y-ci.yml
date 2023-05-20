@@ -20,8 +20,11 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
-        run: npm ci
+      # - name: Install dependencies
+      #   run: npm ci
+
+      # - name: Start server
+      #   run: ...
 
       - name: Generate HTML report
         run: |
